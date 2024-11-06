@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Básico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+    
+    <!-- ACÁ LOS MÁS IMPORTANTE ES EL ACTION Y EL MÉTODO 
+      ACTION: Tiene la ruta del archivo que envia el form 
+          post: Es el método por el cual mandamos la información-->
+    <form action="form.php" method="POST">
+        <h2>Formulario de Usuario</h2>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="texto">Mensaje:</label>
+        <textarea id="texto" name="textarea" required></textarea>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>
